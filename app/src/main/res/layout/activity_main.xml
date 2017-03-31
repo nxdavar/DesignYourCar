@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fiat124"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!-- his part of the code deals with the quantity of the coffee. The quantity can be
+    written in the code here but over time will be changed to the point
+    where the users can change is themselves.-->
+
+
+    <TextView
+        android:id="@+id/quantity_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:text="quantity"
+        android:textColor="#926239"
+        android:textAllCaps="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/minus_button"
+            android:text="-"
+            android:textColor="#926239"
+            android:layout_marginRight="8dp"
+            android:onClick="decrement"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+
+
+        <TextView
+            android:id="@+id/quantity_value_text_view"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="16sp"
+            android:text="1"
+            android:textColor="#926239"/>
+
+        <Button
+            android:id="@+id/plus_button"
+            android:text="+"
+            android:textColor="#926239"
+            android:layout_marginLeft="8dp"
+            android:onClick="increment"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:text="price"
+        android:textColor="#926239"
+        android:textAllCaps="true"/>
+
+
+    <TextView
+        android:id="@+id/price_value_text_view"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#926239"
+        android:text="$5.00/Coffee Cup "
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:text="ORDER"
+        android:textColor="#926239"
+        android:onClick="submitOrder"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
